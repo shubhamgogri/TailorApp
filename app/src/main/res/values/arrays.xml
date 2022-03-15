@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="size">
+        <item>XS</item>
+        <item>S</item>
+        <item>M</item>
+        <item>L</item>
+        <item>XL</item>
+        <item>XXL</item>
+    </string-array>
+    <string-array name="country_arrays">
+        <item>India</item>
+        <item>USA</item>
+        <item>Malaysia</item>
+        <item>UK</item>
+        <item>France</item>
+        <item>Germany</item>
+        <item>Singapore</item>
+        <item>New Zealand</item>
+        <item>Australia</item>
+        <item>Indonesia</item>
+        <item>Italy</item>
+        <item>Pakistan</item>
+    </string-array>
+
+    <string-array name="category">
+        <item>Fashion</item>
+        <item>Traditional</item>
+        <item>Western</item>
+        <item>Daily</item>
+    </string-array>
+
+    <string-array name="subcategory">
+        <item>Men</item>
+        <item>Women</item>
+        <item>Kids</item>
+    </string-array>
+
+    <string-array name="type_clothes">
+        <item>Kurta</item>
+        <item>Shirt</item>
+        <item>Pant</item>
+        <item>Coat</item>
+        <item>Jeans</item>
+        <item>Chudidar</item>
+    </string-array>
+
+</resources>

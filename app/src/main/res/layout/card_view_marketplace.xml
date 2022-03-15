@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="90dp"
+    android:background="@drawable/rectangle"
+    android:layout_marginStart="5dp"
+    android:layout_height="wrap_content"
+    android:id="@+id/card_view"
+    android:elevation="5dp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/image_card_view"
+        android:layout_gravity="fill_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:src="@drawable/buttons" />
+
+    <TextView
+        android:id="@+id/card_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="2dp"
+        android:text="Shirt"
+        android:fontFamily="@font/roboto"
+        android:textColor="@color/purple_700"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/card_item_description"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:text="Description"
+        android:layout_marginTop="2dp"
+        android:layout_marginStart="2dp"
+        android:textColor="@color/black"
+        android:textSize="10sp" />
+
+    <TextView
+        android:layout_marginStart="2dp"
+        android:id="@+id/card_item_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="$ 100"
+        android:fontFamily="@font/roboto"
+        android:textColor="@color/purple_700"
+        android:textSize="11sp"
+        android:textStyle="bold"
+        tools:ignore="SmallSp" />
+</LinearLayout>

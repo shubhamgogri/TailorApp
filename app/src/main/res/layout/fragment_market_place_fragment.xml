@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".nav.marketplace.MarketPlace_fragment">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="@string/marketplace"
+        android:textColor="@color/purple_700"
+        android:textSize="26sp"
+        android:textStyle="italic" />
+
+    <SearchView
+        android:id="@+id/search_view"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/rectangle"
+        android:iconifiedByDefault="false"
+        android:queryHint="Search Items" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/main_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <!--    <RelativeLayout-->
+    <!--        android:layout_marginTop="10sp"-->
+    <!--        android:padding="10dp"-->
+    <!--        android:orientation="vertical"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content">-->
+    <!--        <TextView-->
+    <!--            android:id="@+id/menswear_text"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:text="@string/men_s_wear"-->
+    <!--            android:textColor="@color/purple_700"/>-->
+
+    <!--        <TextView-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginStart="241dp"-->
+    <!--            android:layout_toEndOf="@+id/menswear_text"-->
+    <!--            android:gravity="end"-->
+    <!--            android:text="@string/view_more"-->
+    <!--            android:textColor="@color/purple_700"-->
+    <!--            android:textSize="10dp" />-->
+
+    <!--        <androidx.recyclerview.widget.RecyclerView-->
+    <!--            android:layout_below="@+id/menswear_text"-->
+    <!--            android:id="@+id/men_recyclerview"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"/>-->
+    <!--        <ImageView-->
+    <!--            android:id="@+id/prev"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:src="@android:drawable/ic_media_previous"-->
+    <!--            android:layout_below="@id/men_recyclerview"/>-->
+    <!--        <ImageView-->
+    <!--            android:id="@+id/next"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:src="@android:drawable/ic_media_next"-->
+    <!--            android:layout_below="@id/men_recyclerview"-->
+    <!--            android:layout_alignParentEnd="true"-->
+    <!--            android:layout_marginStart="300dp"/>-->
+
+    <!--    </RelativeLayout>-->
+
+    <!--    <RelativeLayout-->
+    <!--        android:padding="10dp"-->
+    <!--        android:orientation="vertical"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content">-->
+    <!--        <TextView-->
+    <!--            android:id="@+id/womenswear_text"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:text="@string/women_s_wear"-->
+    <!--            android:textColor="@color/purple_700"/>-->
+
+    <!--        <TextView-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginStart="222dp"-->
+    <!--            android:layout_toEndOf="@+id/womenswear_text"-->
+    <!--            android:text="@string/view_more"-->
+    <!--            android:textColor="@color/purple_700"-->
+    <!--            android:textSize="10dp" />-->
+
+    <!--        <androidx.recyclerview.widget.RecyclerView-->
+    <!--            android:layout_below="@+id/womenswear_text"-->
+    <!--            android:layout_marginTop="5dp"-->
+    <!--            android:id="@+id/women_recyclerview"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"/>-->
+    <!--        <ImageView-->
+    <!--            android:id="@+id/prev_second"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:src="@android:drawable/ic_media_previous"-->
+    <!--            android:layout_below="@id/women_recyclerview"/>-->
+    <!--        <ImageView-->
+    <!--            android:id="@+id/next_second"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:src="@android:drawable/ic_media_next"-->
+    <!--            android:layout_below="@id/women_recyclerview"-->
+    <!--            android:layout_alignParentEnd="true"-->
+    <!--            android:layout_marginStart="300dp"/>-->
+
+    <!--    </RelativeLayout>-->
+    <!--    <RelativeLayout-->
+    <!--        android:orientation="vertical"-->
+    <!--        android:padding="10dp"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content">-->
+    <!--        <TextView-->
+    <!--            android:id="@+id/kidswear_text"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:text="@string/kids_wear"-->
+    <!--            android:textColor="@color/purple_700"/>-->
+
+    <!--        <TextView-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginStart="248dp"-->
+    <!--            android:layout_toEndOf="@+id/kidswear_text"-->
+    <!--            android:text="@string/view_more"-->
+    <!--            android:textColor="@color/purple_700"-->
+    <!--            android:textSize="10dp" />-->
+
+    <!--        <androidx.recyclerview.widget.RecyclerView-->
+    <!--            android:layout_below="@+id/kidswear_text"-->
+    <!--            android:layout_marginTop="5dp"-->
+    <!--            android:id="@+id/kids_recyclerview"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"/>-->
+    <!--        <ImageView-->
+    <!--            android:id="@+id/prev_third"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:src="@android:drawable/ic_media_previous"-->
+    <!--            android:layout_below="@id/kids_recyclerview"/>-->
+    <!--        <ImageView-->
+    <!--            android:id="@+id/next_third"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:src="@android:drawable/ic_media_next"-->
+    <!--            android:layout_below="@id/kids_recyclerview"-->
+    <!--            android:layout_alignParentEnd="true"-->
+    <!--            android:layout_marginStart="300dp"/>-->
+    <!--    </RelativeLayout>-->
+
+
+</LinearLayout>

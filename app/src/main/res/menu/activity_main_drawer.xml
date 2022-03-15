@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_order"
+            android:icon="@drawable/orders"
+            android:title="@string/orders" />
+        <item
+            android:id="@+id/nav_products"
+            android:icon="@drawable/products"
+            android:title= "@string/products" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/services_img"
+            android:title="@string/services" />
+        <item
+            android:id="@+id/customers"
+            android:icon="@drawable/customer_img"
+            android:title="@string/customer" />
+        <item
+            android:id="@+id/reports"
+            android:icon="@drawable/report"
+            android:title="@string/report" />
+        <item
+            android:id="@+id/market"
+            android:icon="@drawable/marketplace"
+            android:title="@string/marketplace" />
+        <item
+            android:id="@+id/partner"
+            android:icon="@drawable/partners"
+            android:title="@string/partners" />
+        <item
+            android:id="@+id/settings"
+            android:icon="@drawable/report"
+            android:title="@string/settings" />
+        <item
+            android:id="@+id/refund"
+            android:icon="@drawable/refundpolicy"
+            android:title="@string/refund" />
+        <item
+            android:id="@+id/logout"
+            android:icon="@android:drawable/ic_lock_power_off"
+            android:title="@string/logout" />
+    </group>
+</menu>

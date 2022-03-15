@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignTop="@+id/imageView5"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="1dp"
+            android:src="@drawable/ic_baseline_arrow_back_24" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignTop="@+id/imageView6"
+            android:layout_alignBottom="@+id/imageView6"
+            android:layout_marginStart="203dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="7dp"
+            android:layout_marginBottom="1dp"
+            android:layout_toStartOf="@+id/imageView6"
+            android:src="@drawable/ic_baseline_favorite_24"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView6"
+            app:layout_constraintEnd_toStartOf="@+id/imageView6"
+            app:layout_constraintTop_toTopOf="@+id/imageView6" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignTop="@+id/cart"
+            android:layout_alignBottom="@+id/cart"
+            android:layout_marginTop="-1dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="1dp"
+            android:layout_toStartOf="@+id/cart"
+            android:src="@drawable/ic_baseline_share_24"
+            app:layout_constraintBottom_toBottomOf="@+id/cart"
+            app:layout_constraintEnd_toStartOf="@+id/cart"
+            app:layout_constraintTop_toTopOf="@+id/cart" />
+
+        <ImageView
+            android:id="@+id/cart"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="19dp"
+            android:layout_marginEnd="23dp"
+            android:src="@drawable/cart"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/wishlist"
+        android:layout_marginBottom="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:background="@drawable/rectangle"
+                android:id="@+id/item_detail_image"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:layout_gravity="fill"
+                android:layout_marginTop="10dp"
+                android:filterTouchesWhenObscured="false"
+                android:padding="5dp"
+                android:src="@drawable/itemfabric" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/item_details_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="@font/roboto"
+                    android:text="Shirt"
+                    android:textColor="@color/purple_700"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/item_details_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/item_details_title"
+                    android:layout_marginStart="9dp"
+                    android:layout_marginTop="11dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_toEndOf="@+id/item_details_title"
+                    android:layout_toRightOf="@id/item_details_title"
+                    android:fontFamily="@font/roboto"
+                    android:text="@string/title_activity_product_details"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/prd"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/item_details_title"
+                    android:layout_alignStart="@+id/item_details_title"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="1dp"
+                    android:fontFamily="@font/roboto"
+                    android:text="@string/products"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/item_detail_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/prd"
+                    android:layout_alignStart="@+id/prd"
+                    android:layout_marginTop="0dp"
+                    android:fontFamily="@font/roboto"
+                    android:text="₹ 100"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/item_detail_price"
+                    android:layout_alignBottom="@+id/item_detail_price"
+                    android:layout_marginStart="11dp"
+                    android:layout_toEndOf="@+id/item_detail_price"
+                    android:fontFamily="@font/roboto"
+                    android:text="₹ 100"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/item_detail_price"
+                    android:layout_alignStart="@+id/item_detail_price"
+                    android:layout_marginStart="2dp"
+                    android:text="Inclusive of all taxes"
+                    android:textColor="#025102"
+                    android:textStyle="italic" />
+            </RelativeLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/return_text"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:text="Easy 15 days returns and Exchanges"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.219"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/return_text"
+                    android:fontFamily="@font/roboto"
+                    android:text="Choose to return or exchange for another product."
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toEndOf="@+id/return_text"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/return_text"
+                    app:layout_constraintTop_toBottomOf="@+id/return_text" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/return_text"
+                    android:layout_marginTop="2dp"
+                    android:fontFamily="@font/roboto"
+                    android:text="@string/title_activity_product_details"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/return_text"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/return_text"
+                    app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+                <TextView
+                    android:id="@+id/prod_details"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/return_text"
+                    android:fontFamily="@font/roboto"
+                    android:text="@string/title_activity_product_details"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toEndOf="@+id/textView6"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/textView6"
+                    app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/material_care"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/prod_details"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/prod_details"
+                    app:layout_constraintTop_toBottomOf="@+id/prod_details" />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:text="@string/material"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toEndOf="@+id/textView8"
+                    app:layout_constraintStart_toStartOf="@+id/textView8"
+                    app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:fontFamily="@font/roboto"
+                    android:text="Style Note"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/textView9"
+                    app:layout_constraintStart_toStartOf="@+id/textView9"
+                    app:layout_constraintTop_toBottomOf="@id/textView9" />
+
+                <TextView
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:text="From Justpeachy, these current Fabric is highly used for the shirts and pants.\nMake sure u iron before use ."
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toEndOf="@+id/textView10"
+                    app:layout_constraintStart_toStartOf="@+id/textView10"
+                    app:layout_constraintTop_toBottomOf="@id/textView10" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:elevation="5dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginStart="25dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/roboto"
+                    android:textColor="@color/purple_700"
+                    android:text="Delivery Services"/>
+
+                <EditText
+                    android:id="@+id/editText"
+                    android:layout_width="350dp"
+                    android:padding="5dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginStart="25dp"
+                    android:paddingBottom="10dp"
+                    android:hint="Pin Code"
+                    android:inputType="number" />
+
+                <TextView
+                    android:text="Get it by Sat, 29 Feb"
+                    android:drawableStart="@drawable/ic_baseline_check_24"
+                    android:drawablePadding="5dp"
+                    android:layout_width="350dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/roboto"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="65dp" />
+                <TextView
+                    android:drawableStart="@drawable/ic_baseline_check_24"
+                    android:drawablePadding="5dp"
+                    android:text="Pay On Delivery"
+                    android:layout_width="350dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/roboto"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="85dp" />
+                <TextView
+                    android:drawableStart="@drawable/ic_baseline_check_24"
+                    android:drawablePadding="5dp"
+                    android:text="Easy 30 days return and Exchange Available."
+                    android:layout_width="350dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/roboto"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="105dp" />
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/wishlist"
+        android:layout_width="180dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="15dp"
+        android:backgroundTint="@color/white"
+        android:drawableStart="@drawable/ic_baseline_favorite_24"
+        android:drawablePadding="5dp"
+        android:elevation="5dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="10dp"
+        android:text="WishList"
+        android:textColor="@color/purple_700"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+            android:id="@+id/add_to_cart"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/wishlist"
+        android:padding="5dp"
+        android:text="@string/add_to_cart"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:elevation="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/wishlist"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/wishlist"
+        app:layout_constraintTop_toTopOf="@+id/wishlist" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

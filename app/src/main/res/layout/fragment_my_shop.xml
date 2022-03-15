@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:id="@+id/my_shop_fragment"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    tools:context=".nav.myshop.My_shop">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/appCompatTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/roboto"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/my_shop"
+        android:textColor="@color/purple_700"
+        android:textSize="25sp"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="125dp"
+                android:layout_height="135dp"
+                android:layout_marginStart="50dp"
+                android:orientation="vertical"
+                android:outlineProvider="bounds">
+
+                <ImageView
+                    android:id="@+id/my_shop_circle_buttons"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/buttons"
+                    tools:layout_editor_absoluteX="56dp"
+                    tools:layout_editor_absoluteY="124dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/buttons"
+                    android:textColor="@color/purple_500" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="125dp"
+                android:layout_height="135dp"
+                android:layout_marginStart="50dp"
+                android:orientation="vertical"
+                android:outlineProvider="bounds">
+
+                <ImageView
+                    android:id="@+id/my_shop_laces"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/itemlace"
+                    tools:layout_editor_absoluteX="56dp"
+                    tools:layout_editor_absoluteY="124dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:text="Laces"
+                    android:textColor="@color/purple_500" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp">
+
+            <LinearLayout
+                android:layout_width="125dp"
+                android:layout_height="135dp"
+                android:layout_marginStart="50dp"
+                android:orientation="vertical"
+                android:outlineProvider="bounds">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/buttons"
+                    tools:layout_editor_absoluteX="56dp"
+                    tools:layout_editor_absoluteY="124dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:text="Buttons"
+                    android:textColor="@color/purple_500" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="125dp"
+                android:layout_height="135dp"
+                android:layout_marginStart="50dp"
+                android:orientation="vertical"
+                android:outlineProvider="bounds">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/buttons"
+                    tools:layout_editor_absoluteX="56dp"
+                    tools:layout_editor_absoluteY="124dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:text="Buttons"
+                    android:textColor="@color/purple_500" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp">
+
+            <LinearLayout
+                android:layout_width="125dp"
+                android:layout_height="135dp"
+                android:layout_marginStart="50dp"
+                android:orientation="vertical"
+                android:outlineProvider="bounds">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/buttons"
+                    tools:layout_editor_absoluteX="56dp"
+                    tools:layout_editor_absoluteY="124dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:text="Buttons"
+                    android:textColor="@color/purple_500" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="125dp"
+                android:layout_height="135dp"
+                android:layout_marginStart="50dp"
+                android:orientation="vertical"
+                android:outlineProvider="bounds">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/buttons"
+                    tools:layout_editor_absoluteX="56dp"
+                    tools:layout_editor_absoluteY="124dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:text="Buttons"
+                    android:textColor="@color/purple_500" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</FrameLayout>
