@@ -221,8 +221,8 @@ public class Payment extends AppCompatActivity implements PaymentResultListener 
             jsonObject.put("currency","INR");
             jsonObject.put("amount", 5000);
 //            jsonObject.put("amount", bundle.get("Total"));
-            jsonObject.put("prefill.contact","9699957337");
-            jsonObject.put("prefill.email","gogrishubham10@gmail.com");
+            jsonObject.put("prefill.contact","9887654214");
+            jsonObject.put("prefill.email","app@gmail.com");
             checkout.open(Payment.this,jsonObject);
 
         } catch (JSONException e) {
